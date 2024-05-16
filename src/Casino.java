@@ -1,6 +1,6 @@
 public class Casino {
     public static void main(String[] args){
-        Casino x = new Casino();
+        Casino Josh = new Casino();
     }
     public Casino(){
         System.out.println("Welcome to Josh's Casino!");
