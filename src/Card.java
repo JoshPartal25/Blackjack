@@ -6,7 +6,8 @@ public class Card {
     //name -> Ace, 2, 3, ... jack, queen, king
     public String name;
 
-    Card Ace = new Card(); //Card constructor
+    //Card constructor
+    public Card(){}
     public void print(){ //print method
         System.out.println("the Ace of hearts is worth either 1 point or 11 points");
     }
