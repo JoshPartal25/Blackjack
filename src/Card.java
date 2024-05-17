@@ -1,14 +1,31 @@
 public class Card {
-    //suit -> spade, hearts, diamond
+
     public String suit;
-    //value -> 1-11
     public int value;
-    //name -> Ace, 2, 3, ... jack, queen, king
     public String name;
 
-    //Card constructor
-    public Card(){}
-    public void print(){ //print method
-        System.out.println("the Ace of hearts is worth either 1 point or 11 points");
+    public Card(int pName, int pSuit){
+       //name = pName;
+       //suit = pSuit;
+
+       if(pName == 0){
+           value = 11;
+           name = "Ace";
+       }
+       if(pName == 1){
+           value = 2;
+           name = "Two";
+       }
+       if(pName == 12) {
+           value = 10;
+           name = "King";
+       }
+       if(pSuit == 0){
+           suit = "Hearts";
+       }
+    }
+
+    public void print(){
+        System.out.println("The " + name + " of " + suit + " is worth " + value + " points ");
     }
 }
