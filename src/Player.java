@@ -11,4 +11,11 @@ public class Player {
 
     //players' cards
     public Card[] hand;
+
+    public Player(){
+
+    }
+    public void print(){
+
+    }
 }
