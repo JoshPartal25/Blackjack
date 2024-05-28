@@ -63,5 +63,22 @@ public class Casino {
             deck[esme] = temp;
         }
     }
+    public void checkwinner(){
+        if(jai.cardsSum > dealer.cardsSum) {
+            System.out.println("Jai has blackjack and wins the hand!");
+        }
+        if(jai.cardsSum == dealer.cardsSum){
+            System.out.println("Jai has the same amount as the dealer, Jai pushes!");
+        }
+        if(jai.cardsSum < dealer.cardsSum){
+            System.out.println("Jai has less than the dealer, so the dealer wins the hand!");
+        }
+        if(jai.cardsSum == 21){
+            System.out.println("Blackjack, Jai recieves a 3/2 pay ratio from the dealer!");
+        }
+        if(jai.cardsSum == 21){
+            System.out.println("Blackjack, dealer wins the hand and takes all players money!");
+        }
+    }
 }
 
